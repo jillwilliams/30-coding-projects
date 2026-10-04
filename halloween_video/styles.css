@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Iceland";
+}
+
+#video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* moves the h1 tag to the middle of the page */
+.fa-pause {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+
+.btn-secondary {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
+
+/* the scary music controls*/
+#scaryMusic {
+    width: 0;
+    height: 0;
+}
+
+.clickMe {
+    width: 150px;
+    height: 160px;
+    margin-top: -20px;
+    margin-left: 20px;
+}
+
+#reaper {
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    bottom: 90px;
+    left: 80px;
+    animation: reaper_move 20s infinite;
+}
+
+@keyframes reaper_move  {
+    0% {
+        bottom: 90px;
+        left: 80px;
+    }
+    10% {
+        bottom: 70px;
+        left: 160px;
+    }
+    20% {
+        bottom: 70px;
+        left: 320px;
+    }
+    30% {
+        bottom: 70px;
+        left: 400px;
+    }
+    40% {
+        bottom: 70px;
+        left: 480px;
+    }
+    50% {
+        bottom: 70px;
+        left: 520px;
+    }
+    60% {
+        bottom: 70px;
+        left: 560px;
+    }
+    70% {
+        bottom: 70px;
+        left: 480px;
+    }
+    80% {
+        bottom: 70px;
+        left: 380px;
+    }
+    90% {
+        bottom: 70px;
+        left: 280px;
+    }
+    100% {
+        bottom: 90px;
+        left: 80px;
+    }
+}

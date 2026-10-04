@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Iceland";
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;   
+}
+
+.container {
+    max-width: 550px;
+    padding: 10px;
+}
+
+/* harry potter image */
+#harry {
+    max-width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+/* text: harry potter */
+.container h2 {
+    color: rgb(105,102,135);
+}
+
+/* text: lorem ipsum */
+.container p {
+    color: rgb(105,102,135);
+    margin-bottom: 30px;
+    max-width: 460px;
+}
+
+/* watch now button */
+.container button {
+    background-color: rgb(105,102,135);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 2px solid rgb(200,179,102);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: white;
+    color: rgb(105,102,135);
+    border: 2px solid rgb(105,102,135);
+    transition: 1s;
+}
+
+/* trailer container */
+.trailer-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.active.trailer-container {
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.trailer-container iframe {
+    position: relative;
+    max-width: 900px;
+    outline: none;
+}
+
+@media (max-width: 991px) {
+    .trailer-container iframe {
+        max-width: 90%;
+    }
+}
+
+/* the x icon */
+#close-icon {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: rgb(105,102,135);
+    cursor: pointer;
+}
+
+
+
+
+
